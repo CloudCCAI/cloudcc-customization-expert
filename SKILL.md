@@ -12,6 +12,7 @@ description: 用于 CloudCC CRM 二次开发设计与实施。优先通过 `clou
 ## 快速规则
 
 - 先确认 CLI 可用：优先检查 `cloudcc --version`。
+- 需要查看发布日志时，使用：`cloudcc changelog`（当前版本）、`cloudcc changelog <version>`（指定版本）、`cloudcc changelog --all`（全部版本）。
 - 若未安装，执行：`npm i -g cloudcc-cli@latest`。
 - 当进行 CloudCC 方案设计时，必须读取所有模块的`introduction`文档后，再设计，命令统一格式：`cloudcc doc <module> introduction`
 - 当进行 CloudCC 方案开发时，需要读取，对应模块的`devguide`信息后，再开发，命令统一格式：`cloudcc doc <module> devguide`
