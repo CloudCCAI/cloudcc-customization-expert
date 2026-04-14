@@ -1,6 +1,6 @@
 ---
 name: cloudcc-dev-skill
-description: 用于 CloudCC CRM 二次开发设计与实施。优先通过 `cloudcc doc <module> introduction|devguide` 获取官方模块文档，再给出方案与代码。用户提到 CloudCC、cloudcc-cli、模块文档、对象/字段、权限、触发器、类、组件、页面、脚本、JSP迁移、静态资源、菜单、应用、单点登录、身份提供方、校验规则时应优先使用。
+description: 用于 CloudCC CRM 二次开发设计与实施。优先通过 `cloudcc doc <module> introduction|devguide` 获取官方模块文档，再给出方案与代码。用户提到 CloudCC、cloudcc-cli、模块文档、对象/字段、权限、触发器、类、组件、页面、脚本、JSP 迁移、静态资源、菜单、应用、单点登录、身份提供方、校验规则、查重过滤器（Dupe Catcher）、重复/去重、定时作业、定时类、timer、scheduleJob、共享规则时应优先使用。
 ---
 
 # CloudCC CRM 二开技能
@@ -34,7 +34,9 @@ description: 用于 CloudCC CRM 二次开发设计与实施。优先通过 `clou
 - 全局选项：`cloudcc doc globalSelectList introduction`、`cloudcc doc globalSelectList devguide`
 - 按钮：`cloudcc doc button introduction`、`cloudcc doc button devguide`
 - 页面布局：`cloudcc doc pagelayout introduction`、`cloudcc doc pagelayout devguide`
-- 校验规则：`cloudcc doc validationRule introduction`、`cloudcc doc validationRule devguide`
+- 验证规则：`cloudcc doc validationRule introduction`、`cloudcc doc validationRule devguide`
+- 查重过滤器（dupeCatcher）：`cloudcc doc dupeCatcher introduction`、`cloudcc doc dupeCatcher devguide`
+- 共享规则（sharingRule）：`cloudcc doc sharingRule introduction`、`cloudcc doc sharingRule devguide`
 
 ### 组织与权限
 
@@ -48,12 +50,13 @@ description: 用于 CloudCC CRM 二次开发设计与实施。优先通过 `clou
 - 类：`cloudcc doc classes introduction`、`cloudcc doc classes devguide`
 - 触发器：`cloudcc doc triggers introduction`、`cloudcc doc triggers devguide`
 - 定时类：`cloudcc doc timer introduction`、`cloudcc doc timer devguide`
-- 定时任务：`cloudcc doc scheduleJob introduction`、`cloudcc doc scheduleJob devguide`
+- 定时作业：`cloudcc doc scheduleJob introduction`、`cloudcc doc scheduleJob devguide`（支持 `create` / `get` / `detail` / `delete`，新建前需先获取可用 `prgid`）
 
 ### 前端扩展
 
 - 自定义Vue组件：`cloudcc doc plugin introduction`、`cloudcc doc plugin devguide`
-- 自定义Html组件：`./cloudcc-dev-html.md`
+- 自定义 HTML 组件：`cloudcc doc html introduction`、`cloudcc doc html devguide`
+- Site 开发规范：`cloudcc doc site introduction`、`cloudcc doc site devguide`
 - 自定义页面：`cloudcc doc customPage introduction`、`cloudcc doc customPage devguide`
 - 客户端脚本：`cloudcc doc script introduction`、`cloudcc doc script devguide`
 - 静态资源：`cloudcc doc staticResource introduction`、`cloudcc doc staticResource devguide`
@@ -99,3 +102,4 @@ description: 用于 CloudCC CRM 二次开发设计与实施。优先通过 `clou
 - 当进行 CloudCC 方案开发时，需要读取，对应模块的`devguide`信息后，再开发
 - 命令统一格式：`cloudcc doc <module> <introduction|devguide>`。
 - 特例：`config` 仅支持 `devguide`，不支持 `introduction`。
+
