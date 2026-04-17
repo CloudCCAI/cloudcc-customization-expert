@@ -79,6 +79,8 @@ description: 用于 CloudCC CRM 二次开发设计与实施。优先通过 `clou
 - 单点登录：`cloudcc doc singleSignOn introduction`、`cloudcc doc singleSignOn devguide`
 - OpenAPI：`cloudcc doc openapi introduction`、`cloudcc doc openapi devguide`
 
+**调用doc，获取introduction和devguide时，用完就要从上下文中清除，不要占用上下文，只用一次，下次使用再次查询**
+
 ## 使用流程（执行顺序）
 
 1. 方案阶段：先调用
