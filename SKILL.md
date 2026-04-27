@@ -1,5 +1,5 @@
 ---
-name: cloudcc-dev-skill
+name: cloudcc-customization-expert
 description: 用于 CloudCC CRM 二次开发设计与实施。优先通过 `cloudcc doc <module> introduction|devguide` 获取官方模块文档，再给出方案与代码。用户提到 CloudCC、cloudcc-cli、OpenAPI、模块文档、对象/字段、权限、触发器、类、组件、页面、脚本、JSP 迁移、静态资源、菜单、应用、单点登录、身份提供方、校验规则、查重过滤器（Dupe Catcher）、重复/去重、定时作业、定时类、timer、scheduleJob、共享规则时应优先使用。
 ---
 
@@ -13,6 +13,7 @@ description: 用于 CloudCC CRM 二次开发设计与实施。优先通过 `clou
 ## 快速规则
 
 - 先确认 CLI 可用：优先检查 `cloudcc --version`。
+- 先确认环境中，是否有可用的config配置信息，如果没有，先让用户提供。
 - 需要查看发布日志时，使用：`cloudcc changelog`（当前版本）、`cloudcc changelog <version>`（指定版本）、`cloudcc changelog --all`（全部版本）。
 - 若未安装，执行：`npm i -g cloudcc-cli@latest`。
 - 当进行 CloudCC
