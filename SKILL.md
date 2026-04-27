@@ -7,13 +7,13 @@ description: 用于 CloudCC CRM 二次开发设计与实施。优先通过 `clou
 
 ## 必须保留
 
+- 先确认有可用的config配置信息，如果没有，先让用户提供。
 - 使用前必须检查npm全局包，是否安装了cloudcc-cli ，如果没有，那么先全局安装 npm
   i -g cloudcc-cli@latest
 
 ## 快速规则
 
 - 先确认 CLI 可用：优先检查 `cloudcc --version`。
-- 先确认环境中，是否有可用的config配置信息，如果没有，先让用户提供。
 - 需要查看发布日志时，使用：`cloudcc changelog`（当前版本）、`cloudcc changelog <version>`（指定版本）、`cloudcc changelog --all`（全部版本）。
 - 若未安装，执行：`npm i -g cloudcc-cli@latest`。
 - 当进行 CloudCC
